@@ -1,0 +1,344 @@
+<resources>
+    <string name="app_name">Thesis</string>
+    <string name="password">Password</string>
+
+
+    <string name="login">Login</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="copyright_2018">COPYRIGHT 2018</string>
+    <string name="title_activity_sign">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="full_name">FULL NAME</string>
+    <string name="user_name">USER NAME</string>
+    <string name="password_singup">PASSWORD</string>
+    <string name="email_signup">EMAIL</string>
+    <string name="sign_up_sign">SIGN UP</string>
+    <string name="terms_conditiion"><![CDATA[By SIGNING UP it means that you agree to Aegon\'s TERMS & CONDITION]]></string>
+    <string name="search_location">SEARCH LOCATION</string>
+    <string name="sign_up_mainact">SIGN UP</string>
+
+    <string name="my_boarding_house_settings">MY BOARDING HOUSE SETTINGS</string>
+    <string name="log_out_settings">LOG OUT</string>
+    <string name="deactivate_account">DEACTIVATE ACCOUNT</string>
+    <string name="are_you_sure_to_log_out">Are you sure to Log Out?</string>
+    <string name="no_log_out">No</string>
+    <string name="yes_log_out">Yes</string>
+    <string name="title_activity_person_profile">PersonProfileActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_prof">ProfActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="login_main">LOGIN</string>
+
+    <string name="or">OR</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="switch_to_house">Switch to House</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="my_profile_settings">My Profile Settings</string>
+    <string name="terms_and_conditions_profile">Terms And Conditions</string>
+    <string name="log_out_profile">Log Out</string>
+    <string name="search_house">Search</string>
+    <string name="search">SEARCH</string>
+    <string name="re_confirm_password">RE-CONFIRM PASSWORD</string>
+    <string name="by_signing_up_it_means_that_you_agree_to_aegon_s">By SIGNING UP it means that you agree to Aegon\'s</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="terms_and_conditions">TERMS AND CONDITIONS</string>
+    <string name="yessssss">YESSSSSS</string>
+    <string name="title_activity_owner_account">OwnerAccountActivity</string>
+    <string name="first_tab">FIRST TAB</string>
+    <string name="second_tab">SECOND TAB</string>
+    <string name="third_tab">THIRD TAB</string>
+    <string name="title_activity_owner__profile_">Owner_Profile_Activity</string>
+    <string name="sali_awesome">SALI AWESOME</string>
+    <string name="email_account">Email Account</string>
+    <string name="sali_gmail_com">Sali@gmail.com</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="number">09157681147</string>
+    <string name="username">Username</string>
+    <string name="are_you_sure_to_deactivate_your_account">Are you sure to deactivate your account?</string>
+    <string name="learn_more_about">Learn more about</string>
+    <string name="deactivate_deactinfo">DEACTIVATE</string>
+    <string name="if_you_if_deactivate_your_account">If you if deactivate your account..</string>
+    <string name="tab_2">TAB 2</string>
+    <string name="boarding_house_address">BOARDING HOUSE ADDRESS</string>
+    <string name="boarding_house_name">BOARDING HOUSE NAME</string>
+
+    <string name="optional">Optional</string>
+
+    <string name="next_first">NEXT</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="pet_friendly">Pet Friendly</string>
+    <string name="smoking_allowed">Smoking Allowed</string>
+    <string name="private_kitchen">Private Kitchen</string>
+    <string name="shared_kitchen">Shared Kitchen</string>
+    <string name="private_bathroom">Private Bathroom</string>
+    <string name="shared_bathroom">Shared Bathroom</string>
+    <string name="house_amenities">House Amenities</string>
+    <string name="shared_laundry_room">Shared Laundry Room</string>
+    <string name="covered_parking">Covered Parking</string>
+    <string name="bike_storage_room">Bike Storage Room</string>
+    <string name="pool">Pool</string>
+    <string name="wifi">Wifi</string>
+    <string name="security_guard">Security Guard</string>
+    <string name="security_camera">Security Camera</string>
+    <string name="gated_access">Gated Access</string>
+    <string name="house_name">HOUSE NAME</string>
+    <string name="barangay_purok_street_house_number">BARANGAY, PUROK/STREET, HOUSE NUMBER</string>
+    <string name="property_type">PROPERTY TYPE</string>
+    <string name="property_address">PROPERTY ADDRESS</string>
+    <string name="business_permit_number">BUSINESS PERMIT NUMBER</string>
+    <string name="business_permit_number_quest">BUSINESS PERMIT NUMBER</string>
+    <string name="how_many_rooms_does_your_apartment_have">How many rooms does your apartment have?</string>
+    <string name="how_many_rooms_does_your_apartment_have_apartment">How many rooms does your apartment have?</string>
+    <string name="amenities_apartment">Amenities:</string>
+    <string name="shared_laundry_room_apartment">Shared Laundry Room</string>
+
+
+    <string name="patio_or_balcony_apartment">Patio or Balcony</string>
+    <string name="washer_amp_dryers_in_unit_apartment"><![CDATA[Washer & Dryers in Unit]]></string>
+    <string name="wood_flooring_apartment">Wood Flooring</string>
+    <string name="dishwasher_unit_apartment">Dishwasher Unit</string>
+    <string name="bike_storage_apartment">Bike Storage</string>
+    <string name="air_conditioning_apartment">Air Conditioning</string>
+    <string name="pet_friendly_apartment">Pet Friendly</string>
+    <string name="covered_parking_apartment">Covered Parking</string>
+    <string name="assigned_parking_space_apartment">Assigned Parking Space</string>
+    <string name="security_camera_apartment">Security Camera</string>
+    <string name="security_guard_apartment">Security Guard</string>
+    <string name="gated_access_apartment">Gated Access</string>
+    <string name="valet_trash_apartment">Valet Trash</string>
+    <string name="doorman_apartment">Doorman</string>
+    <string name="door_step_recycling_collection_apartment">Door Step Recycling Collection</string>
+    <string name="next_apartment">NEXT</string>
+    <string name="how_many_bathroom_per_apartment_you_have_apartment">How many bathroom per apartment you have?</string>
+    <string name="male_boarders_boardinghouse">Male Boarders</string>
+    <string name="how_many_kitchen_does_your_boarding_house_have_shared_kitchen_boardinghouse">How many kitchen does your Boarding House have? (Shared Kitchen)</string>
+    <string name="how_many_rooms_does_your_boarding_house_have_boardinghouse">How many rooms does your Boarding House have?</string>
+    <string name="shared_bathroom_boardinghouse">Shared Bathroom</string>
+    <string name="female_boarders_boardinghouse">Female Boarders</string>
+    <string name="wifi_connection_boardinghouse">WIFI Connection</string>
+    <string name="male_amp_female_boarders_boardinghouse"><![CDATA[Male & Female Boarders]]></string>
+    <string name="how_many_bathroom_does_your_boarding_house_have_shared_bathroom_boardinghouse">How many bathroom does your Boarding House have? (Shared Bathroom)</string>
+    <string name="surveillance_or_recording_devices_on_property_apartrule">Surveillance or recording devices on property</string>
+    <string name="details_about_your_apartment_apartrule">Details about your Apartment</string>
+    <string name="weapons_on_property_apartrule">Weapons on property</string>
+    <string name="dangerous_animals_on_property_apartrule">Dangerous animals on property</string>
+    <string name="potential_for_noise_apartrule">Potential for noise</string>
+    <string name="no_parking_on_property_apartrule">No parking on property</string>
+    <string name="set_apartment_rules_apartrule">Set Apartment Rules</string>
+    <string name="add_rules_apartrule">ADD RULES</string>
+    <string name="php_apartmentpayment">PHP</string>
+    <string name="per_apartmentpayment">FOR A</string>
+
+
+    <string name="apartment_payment">Apartment Payment</string>
+    <string name="type_apartment_per">PER</string>
+
+    <string-array name="apartment_per_payment">
+        <item>Month</item>
+        <item>Week</item>
+        <item>Day</item>
+    </string-array>
+
+
+    <string name="boarding_payment">Apartment Payment</string>
+    <string name="type_boarding_fora">FOR A</string>
+
+    <string-array name="boarding_for_payment">
+        <item>Month</item>
+        <item>Week</item>
+        <item>Day</item>
+    </string-array>
+
+    <string-array name="boarding_per_payment">
+        <item>Room</item>
+        <item>Head</item>
+        <item>Bed</item>
+    </string-array>
+
+
+    <string name="dorm_payment">Apartment Payment</string>
+    <string name="type_dorm_fora">FOR A</string>
+    <string name="set_payment_rule">Set Payment</string>
+    <string name="set_apartment_payment_rule">Set Apartment Payment</string>
+    <string name="set_payment_rules">Set Payment Rule</string>
+    <string name="set_apartment_payment_ruless">Set Apartment Payment Rules</string>
+    <string name="upload_apartment_picture">Upload Apartment Picture</string>
+    <string name="apartpicfirst">TODO</string>
+    <string name="apartpicsec">TODO</string>
+    <string name="apartpicthird">TODO</string>
+    <string name="apartpicfourth">TODO</string>
+    <string name="apart2">TODO</string>
+    <string name="apart22">TODO</string>
+    <string name="apart3">TODO</string>
+    <string name="apartred">TODO</string>
+    <string name="property_descriptions">PROPERTY DESCRIPTION</string>
+    <string name="property_names">PROPERTY NAME</string>
+    <string name="save_bh">Save</string>
+    <string name="all_the_information_about_your_boarding_house_must_be_true_bh">All the information about your boarding house must be true.......</string>
+    <string name="boarding_house_details_confirmation_bh">Boarding House Details Confirmation</string>
+    <string name="set_boarding_house_payment_rules_bh">Set Boarding House Payment Rules</string>
+    <string name="upload_boarding_house_picture_bh">Upload Boarding House Picture</string>
+    <string name="details_about_your_boarding_house_bh">Details about your Boarding House</string>
+    <string name="set_boarding_house_rules_bh">Set Boarding House Rules</string>
+    <string name="how_many_room_does_your_dorm_have_dorm">How many room does your Dorm have?</string>
+    <string name="how_many_bathroom_does_your_dorm_have_dorm">How many bathroom does your Dorm have?</string>
+    <string name="how_many_bed_per_room_does_your_dorm_have_dorm">How many bed per room does your Dorm have?</string>
+    <string name="male_dormitory_dorm">Male Dormitory</string>
+    <string name="female_dormitory_dorm">Female Dormitory</string>
+    <string name="male_amp_female_dormitory_dorm"><![CDATA[Male & Female Dormitory]]></string>
+    <string name="details_about_your_dorm">Details about your Dorm</string>
+    <string name="set_dorm_rules">Set Dorm Rules</string>
+    <string name="per_dorm">PER</string>
+    <string name="set_dorm_payment">Set Dorm Payment</string>
+    <string name="save_dorm">Save</string>
+    <string name="all_the_information_about_your_dorm_must_be_true_dorm">All the information about your dorm must be true.......</string>
+    <string name="dorm_details_confirmation_dorm">Dorm Details Confirmation</string>
+    <string name="s">PER</string>
+    <string name="set_boarding_house_payment_s">Set Boarding House Payment</string>
+    <string name="original_offered_payment_s">Original Offered Payment</string>
+    <string name="set_sub_payment_s">Set Sub Payment</string>
+    <string name="set_sub_payment">SET SUB PAYMENT</string>
+    <string name="set_sub_payment_ss">SET SUB PAYMENT</string>
+
+    <string-array name="dorm_for_payment">
+        <item>Month</item>
+        <item>Week</item>
+        <item>Day</item>
+    </string-array>
+
+    <string-array name="dorm_per_payment">
+        <item>Room</item>
+        <item>Head</item>
+        <item>Bed</item>
+    </string-array>
+    <string name="title_activity_house_info">HouseInfoActivity</string>
+    <string name="title_activity_add_house_place_picker">PlacePicker</string>
+
+
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="loading">LOADING...</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_place_picker">Map</string>
+    <string name="title_activity_nav_drawer">NavDrawerAct</string>
+
+
+</resources>
+

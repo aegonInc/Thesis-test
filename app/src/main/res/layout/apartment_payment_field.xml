@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/php_apartmentpayment"
+        android:layout_marginTop="25dp"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+
+        android:gravity="center"
+        android:layout_marginEnd="0dp"/>
+
+    <EditText
+    android:id="@+id/number_edit_text_apartpayment"
+    android:layout_width="120dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="25dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+        android:layout_weight="5"
+    android:background="@drawable/rounded_white"
+    android:paddingEnd="20dp"
+
+        android:gravity="center"
+    android:paddingStart="20dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/per_apartmentpayment"
+        android:layout_marginTop="25dp"
+        android:textSize="12sp"
+
+        android:gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"/>
+
+
+    <Spinner
+        android:id="@+id/type_spinner_apartpayment_per"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_weight="20"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:entries="@array/apartment_per_payment"
+        android:prompt="@string/type_apartment_per"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/delete_button_apartpayment"
+        android:layout_width="5dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+
+        android:layout_weight="1"
+        android:background="@drawable/delete"
+        android:gravity="center"
+        android:onClick="onDelete" />
+
+
+    <!--<TextView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="PHP"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:id="@+id/textView" />-->
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/number_edit_text_apartpayment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+         <!--android:layout_marginTop="85dp"-->
+        <!--android:layout_marginStart="5dp"-->
+        <!--android:layout_marginEnd="40dp"-->
+        <!--android:layout_toEndOf="@+id/textView"-->
+        <!--android:layout_weight="5"-->
+        <!--android:background="@drawable/rounded_white"-->
+        <!--android:paddingEnd="20dp"-->
+        <!--android:paddingStart="20dp" />-->
+
+
+
+</LinearLayout>

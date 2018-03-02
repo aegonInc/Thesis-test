@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "315618599254",
+    "firebase_url": "https://aegon-2018.firebaseio.com",
+    "project_id": "aegon-2018",
+    "storage_bucket": "aegon-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315618599254:android:33e0da78816c6b45",
+        "android_client_info": {
+          "package_name": "com.example.thesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315618599254-jgn2dlnhh272mohhomn88epsjavvf9u9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thesis",
+            "certificate_hash": "a546d743a48bb864f5c346c3199e040eb0fbdea8"
+          }
+        },
+        {
+          "client_id": "315618599254-4lsslpp9pujjgv0doajdtcemesk0ngj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbaCNNbeC5qSIBcqDj8yn89K0gOKKQ3Nw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315618599254-4lsslpp9pujjgv0doajdtcemesk0ngj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/deact_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:text="@string/are_you_sure_to_log_out"
+        android:textSize="25sp"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/btnYesLogout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deact_quest"
+        android:layout_below="@+id/deact_quest"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/yes_log_out"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnNoLogout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnYesLogout"
+        android:background="@drawable/red_rounded_shape"
+        android:layout_alignEnd="@+id/deact_quest"
+        android:layout_marginEnd="19dp"
+        android:textColor="@color/white"
+        android:text="@string/no_log_out" />
+
+</RelativeLayout>

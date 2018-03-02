@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thesis.AddHouseDormPaymentRulesActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_dorm_payment_rules">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Dorm Payment Rules"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/add_paymentrule_button_dorm"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                android:layout_marginTop="20dp"
+
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:gravity="center"
+                android:background="@drawable/button_shape"
+                android:layout_gravity="center"
+                android:onClick="onAddFieldRule"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/set_payment_rules"
+                />
+
+
+            <Button
+                android:id="@+id/btnNextPayRuleDorm"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginTop="100dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_shape"
+                android:text="@string/next_apartment"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

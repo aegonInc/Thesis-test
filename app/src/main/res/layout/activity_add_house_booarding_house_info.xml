@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thesis.AddHouseBooardingHouseInfoActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txthousenamequest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/property_names"
+                android:textSize="20sp"/>
+
+            <EditText
+
+                android:id="@+id/txtBhouseName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_white"
+
+                android:paddingEnd="10dp"
+                android:textSize="20sp"
+                android:paddingStart="25dp" android:inputType="" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txthousedescquest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/property_descriptions"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/txtBhouseDesc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/square"
+                android:ems="10" android:inputType="">
+
+            </EditText>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtaddressquest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/property_address"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/btnGoPlaceBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARK YOUR PROPERTY HERE"
+                android:onClick="goPlacePicker"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:id="@+id/tvPlaceBhouse"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tvPlacesBhouse"
+                android:textSize="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/get_place_longitudeBhouse"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/get_place_latitudeBhouse"/>
+
+            <AutoCompleteTextView
+
+
+                android:id="@+id/txtBhouseBarangay"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_white"
+                android:hint="@string/barangay_purok_street_house_number"
+                android:paddingEnd="10dp"
+                android:textSize="15sp"
+                android:paddingStart="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_permit_number_quest"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/optional"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+
+            <EditText
+
+
+                android:id="@+id/txtBhousePermit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_white"
+                android:ems="10"
+                android:paddingEnd="10dp"
+                android:textSize="20sp"
+                android:paddingStart="25dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Upload Boarding House Picture"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:id="@+id/tbrowApartPicFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/imgBhouseFirst"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/uploadpic" android:contentDescription="@string/todo" />
+
+                    <ImageButton
+                        android:id="@+id/imgBhouseSec"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/uploadpic" android:contentDescription="@string/todo" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tbrowApartPicSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <ImageButton
+                        android:id="@+id/imgBhouseThird"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/uploadpic" android:contentDescription="@string/todo" />
+
+                    <ImageButton
+                        android:id="@+id/imgBhouseFourth"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/uploadpic" android:contentDescription="@string/todo" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/txtRoomsQuestBoardingHouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/how_many_rooms_does_your_boarding_house_have_boardinghouse"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtRoomBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/txtBathroomQuestApartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/how_many_bathroom_does_your_boarding_house_have_shared_bathroom_boardinghouse"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/txtBathroomBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                />
+
+
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/txtKitchenQuestApartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/how_many_kitchen_does_your_boarding_house_have_shared_kitchen_boardinghouse"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtKitchenBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+
+
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:id="@+id/txtAmenitiesQuestApartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/amenities_apartment"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TableRow
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <CheckBox
+                        android:id="@+id/chkAirConditioningBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/air_conditioning_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkPetFriendlyBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/pet_friendly_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <CheckBox
+                        android:id="@+id/chkCoveredParkingBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/covered_parking_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <CheckBox
+                        android:id="@+id/chkBikeStorageLockersBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/bike_storage_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+                    <CheckBox
+                        android:id="@+id/chkSharedLaundryRoomBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/shared_laundry_room_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkSharedBathroomBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/shared_bathroom_boardinghouse"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkDishwasherUnitBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/dishwasher_unit_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkWasherAndDryersUnitBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/washer_amp_dryers_in_unit_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <CheckBox
+                        android:id="@+id/chkBoysOnlyBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/male_boarders_boardinghouse"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <CheckBox
+                        android:id="@+id/chkGirlsOnlyBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/female_boarders_boardinghouse"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkWifiBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/wifi_connection_boardinghouse"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkGenderNeutralBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/male_amp_female_boarders_boardinghouse"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkSecurityCameraBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/security_camera_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkSecurityGuardBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/security_guard_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkGatedAccessBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/gated_access_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkValetTrashBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/valet_trash_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkDoormanBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/doorman_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkDoorStepRecyclingCollectionBhouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/door_step_recycling_collection_apartment"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <CheckBox
+                        android:id="@+id/chkWeaponsApartRuleBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/weapons_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkDangerousApartRuleBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/dangerous_animals_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkPotenRuleApartRuleBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/potential_for_noise_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkNoParkRuleBhouse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/no_parking_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Boarding House Rule"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/idbhRulesBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/square"
+                android:ems="10" android:inputType="">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Boarding House Payment Rule"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/original_offered_payment_s"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/php_apartmentpayment"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+
+                    android:gravity="center"
+                    android:layout_marginEnd="0dp"/>
+
+                <EditText
+                    android:id="@+id/number_edit_text_Bhouse"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/rounded_white"
+                    android:paddingEnd="20dp"
+
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/per_apartmentpayment"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+
+                    android:gravity="center"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"/>
+
+
+                <Spinner
+                    android:id="@+id/type_spinner_Bhouse_pers"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:entries="@array/apartment_per_payment"
+                    android:prompt="@string/type_apartment_per"
+                    android:gravity="center"
+                    android:layout_marginStart="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Boarding House Payment Rule"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <EditText
+                android:id="@+id/idapartPaymentRulesBhouse"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/square"
+                android:ems="10" android:inputType="">
+
+            </EditText>
+
+
+            <Button
+                android:id="@+id/btnSaveBhouse"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginTop="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_shape"
+                android:text="ADD HOUSE"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

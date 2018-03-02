@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thesis.addHouseApartmentRulesActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/parent_linear_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details_about_your_apartment_apartrule"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tbrowApartRules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/chkSurveillanceRuleApart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/surveillance_or_recording_devices_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <CheckBox
+                        android:id="@+id/chkWeaponsApartRule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/weapons_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <CheckBox
+                        android:id="@+id/chkDangerousApartRule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/dangerous_animals_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkPotenRuleApartRule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/potential_for_noise_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/chkNoParkApartRule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/no_parking_on_property_apartrule"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_apartment_rules_apartrule"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp" />
+
+
+            <Button
+                android:id="@+id/add_field_button"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+
+                android:layout_marginTop="20dp"
+
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:gravity="center"
+                android:background="@drawable/button_shape"
+                android:layout_gravity="center"
+                android:onClick="onAddField"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/add_rules_apartrule"
+                />
+
+
+            <Button
+                android:id="@+id/btnNextApartRule"
+                android:layout_gravity="center"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginTop="90dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_shape"
+                android:text="@string/next_apartment"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

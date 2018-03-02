@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context="com.example.thesis.LogInActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/der"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/icon_title"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/aegon_icon"
+                android:contentDescription="@string/todo" />
+
+
+
+            <ImageView
+                android:id="@+id/formLogo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/title"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+android:gravity="center">
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/search_field"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toStartOf="@+id/btnSearch"
+                    android:background="@drawable/rounded_white"
+                    android:hint="SEARCH BARANGAY NAME"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/c" />
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnSearchFilter"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/filtericon" />-->
+
+
+            </LinearLayout>
+
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="70dp"
+                android:id="@+id/btnGoogleNew"
+                android:contentDescription="Signin with Google"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

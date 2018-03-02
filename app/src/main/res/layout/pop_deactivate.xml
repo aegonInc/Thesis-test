@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/deact_quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/are_you_sure_to_deactivate_your_account"
+        android:textSize="25sp"
+        android:textStyle="normal"
+
+        android:layout_marginStart="80dp"/>
+
+    <Button
+        android:id="@+id/yes_deactivate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/deact_quest"
+        android:layout_below="@+id/deact_quest"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/yes_log_out"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/no_deactivate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yes_deactivate"
+        android:background="@drawable/red_rounded_shape"
+        android:layout_alignEnd="@+id/deact_quest"
+        android:layout_marginEnd="19dp"
+        android:textColor="@color/white"
+        android:text="@string/no_log_out" />
+
+    <TextView
+        android:id="@+id/learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learn_more_about"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/yes_deactivate"
+        android:layout_marginTop="230dp"
+        />
+
+    <TextView
+        android:id="@+id/deactivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/learn"
+        android:layout_alignStart="@+id/learn"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="125dp"
+        android:text="@string/deactivate_deactinfo"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>

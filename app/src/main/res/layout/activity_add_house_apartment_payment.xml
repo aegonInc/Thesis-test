@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.thesis.AddHouseApartmentPaymentActivity">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_apartment_payment">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_apartment_payment_rule"
+                    android:textSize="25sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/original_offered_payment_s"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/php_apartmentpayment"
+                            android:layout_marginTop="10dp"
+                            android:textSize="12sp"
+                            android:layout_marginStart="10dp"
+
+                            android:gravity="center"
+                            android:layout_marginEnd="0dp"/>
+
+                        <EditText
+                            android:id="@+id/number_edit_text_apartpayments"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/rounded_white"
+                            android:paddingEnd="20dp"
+
+                            android:gravity="center"
+                            android:paddingStart="20dp"
+                            android:inputType="numberDecimal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/per_apartmentpayment"
+                            android:layout_marginTop="10dp"
+                            android:textSize="12sp"
+
+                            android:gravity="center"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"/>
+
+
+                        <Spinner
+                            android:id="@+id/type_spinner_apartpayment_pers"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="20"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:entries="@array/apartment_per_payment"
+                            android:prompt="@string/type_apartment_per"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp"
+                            />
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_field_button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="130dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_shape"
+                    android:layout_gravity="center"
+                    android:onClick="onAddField"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="@string/set_sub_payment_ss"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btnNextApartPay"
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_shape"
+                    android:text="@string/next_apartment"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+
+        </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
